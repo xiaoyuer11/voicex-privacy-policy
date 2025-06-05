@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceX - 录音转文字</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'PingFang SC', 'Hiragino Sans', Arial, sans-serif;
+      background: #f4f8fb;
+      color: #222;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1976d2;
+      color: #fff;
+      padding: 0 32px;
+      height: 60px;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .contact-email {
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: underline;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+    .main-content {
+      max-width: 800px;
+      margin: 48px auto 0 auto;
+      text-align: center;
+    }
+    .main-title {
+      font-size: 2.5rem;
+      color: #1976d2;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .feature-section {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(33, 150, 243, 0.08);
+      padding: 32px 24px 24px 24px;
+      width: 220px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .feature-card h2 {
+      color: #1976d2;
+      margin: 18px 0 8px 0;
+      font-size: 1.2rem;
+    }
+    .feature-card p {
+      color: #444;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .icon-mic, .icon-text {
+      margin-bottom: 8px;
+    }
+    .record-btn-demo {
+      margin: 40px 0 24px 0;
+    }
+    .record-btn {
+      background: linear-gradient(90deg, #1976d2 60%, #2196f3 100%);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 16px 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: not-allowed;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.12);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.7;
+    }
+    .demo-tip {
+      color: #90caf9;
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
+    .footer {
+      text-align: center;
+      color: #90caf9;
+      font-size: 1rem;
+      padding: 32px 0 16px 0;
+      margin-top: 48px;
+    }
+    @media (max-width: 600px) {
+      .feature-section {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .main-content {
+        margin-top: 24px;
+        padding: 0 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">VoiceX</div>
+  </nav>
+  <main class="main-content">
+    <h1 class="main-title">录音转文字，一键搞定</h1>
+    <p class="subtitle">高效、准确的语音转写工具，助力你的每一次记录</p>
+    <div class="feature-section">
+      <div class="feature-card">
+        <div class="icon-mic">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="#1976D2"/>
+            <rect x="18" y="12" width="12" height="20" rx="6" fill="white"/>
+            <rect x="22" y="32" width="4" height="8" rx="2" fill="white"/>
+            <rect x="16" y="38" width="16" height="4" rx="2" fill="#90CAF9"/>
+          </svg>
+        </div>
+        <h2>一键录音</h2>
+        <p>点击录音，自动转文字，省时省力。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-text">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="#2196F3"/>
+            <rect x="14" y="18" width="20" height="4" rx="2" fill="white"/>
+            <rect x="14" y="26" width="20" height="4" rx="2" fill="white"/>
+          </svg>
+        </div>
+        <h2>高效转写</h2>
+        <p>支持多种语言，转写准确率高。</p>
+      </div>
+    </div>
+    <div class="record-btn-demo">
+      <button class="record-btn" disabled>
+        <span role="img" aria-label="mic">🎤</span> 开始录音
+      </button>
+      <p class="demo-tip">（演示按钮）</p>
+    </div>
+  </main>
+  <footer class="footer">
+    © 2025 VoiceX. 个人开发者作品 | 邮箱：voicex2025@163.com
+  </footer>
+</body>
+</html> 
